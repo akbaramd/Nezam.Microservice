@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  identity-api:
+    build:
+      context: .
+      dockerfile: Services/Identity/Nezam.Service.Identity.Api/Dockerfile
+    ports:
+      - "5001:8080" # Map port 5001 on the host to port 8080 in the container
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ__ConnectionString=amqp://guest:guest@rabbitmq:5672/  # RabbitMQ connection string
+      - Redis__ConnectionString=redis:6379 # Redis connection string
+    networks:
+      - nezam-network
+    depends_on:
+      - prometheus
+      - rabbitmq
+      - redis
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./data:/app/data
+      - ./Services/Identity/Nezam.Service.Identity.Api/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090" # Prometheus web UI port
+    networks:
+      - nezam-network
+  
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000" # Grafana web UI port
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin # Default password for Grafana admin user
+    networks:
+      - nezam-network
+    depends_on:
+      - prometheus
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672" # RabbitMQ service port
+      - "15672:15672" # RabbitMQ management UI port
+    networks:
+      - nezam-network
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379" # Redis service port
+    networks:
+      - nezam-network
+
+networks:
+  nezam-network:
+    driver: bridge

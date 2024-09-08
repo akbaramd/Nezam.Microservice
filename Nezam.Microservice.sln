@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7D331985-5F41-4C8C-A7D1-86EA90928A63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{35B7D2A7-093B-4D4E-BB7C-C762ABB53BE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezam.Service.Identity.Api", "Services\Identity\Nezam.Service.Identity.Api\Nezam.Service.Identity.Api.csproj", "{9187470F-CEF4-4230-A0BF-0089B006477A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezam.Common", "Nezam.Common\Nezam.Common.csproj", "{054A45B2-525F-4CF6-963D-8FF59F81DFCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezam.Service.Identity.Domain", "Services\Identity\Nezam.Service.Identity.Domain\Nezam.Service.Identity.Domain.csproj", "{37BEB23B-1898-4B68-A1A5-9856657DA261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezam.Service.Identity.Infrastructure", "Services\Identity\Nezam.Service.Identity.Infrastructure\Nezam.Service.Identity.Infrastructure.csproj", "{288CA3C1-5ECD-47F0-BCE8-052283711A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezam.Service.Identity.Application", "Services\Identity\Nezam.Service.Identity.Application\Nezam.Service.Identity.Application.csproj", "{C2883196-D090-4272-A106-5E3EB3337690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9187470F-CEF4-4230-A0BF-0089B006477A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9187470F-CEF4-4230-A0BF-0089B006477A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9187470F-CEF4-4230-A0BF-0089B006477A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9187470F-CEF4-4230-A0BF-0089B006477A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054A45B2-525F-4CF6-963D-8FF59F81DFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054A45B2-525F-4CF6-963D-8FF59F81DFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054A45B2-525F-4CF6-963D-8FF59F81DFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054A45B2-525F-4CF6-963D-8FF59F81DFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BEB23B-1898-4B68-A1A5-9856657DA261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BEB23B-1898-4B68-A1A5-9856657DA261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BEB23B-1898-4B68-A1A5-9856657DA261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BEB23B-1898-4B68-A1A5-9856657DA261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288CA3C1-5ECD-47F0-BCE8-052283711A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288CA3C1-5ECD-47F0-BCE8-052283711A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288CA3C1-5ECD-47F0-BCE8-052283711A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288CA3C1-5ECD-47F0-BCE8-052283711A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2883196-D090-4272-A106-5E3EB3337690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2883196-D090-4272-A106-5E3EB3337690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2883196-D090-4272-A106-5E3EB3337690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2883196-D090-4272-A106-5E3EB3337690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35B7D2A7-093B-4D4E-BB7C-C762ABB53BE5} = {7D331985-5F41-4C8C-A7D1-86EA90928A63}
+		{9187470F-CEF4-4230-A0BF-0089B006477A} = {35B7D2A7-093B-4D4E-BB7C-C762ABB53BE5}
+		{37BEB23B-1898-4B68-A1A5-9856657DA261} = {35B7D2A7-093B-4D4E-BB7C-C762ABB53BE5}
+		{288CA3C1-5ECD-47F0-BCE8-052283711A09} = {35B7D2A7-093B-4D4E-BB7C-C762ABB53BE5}
+		{C2883196-D090-4272-A106-5E3EB3337690} = {35B7D2A7-093B-4D4E-BB7C-C762ABB53BE5}
+	EndGlobalSection
+EndGlobal
