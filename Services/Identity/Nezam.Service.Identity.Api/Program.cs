@@ -6,7 +6,7 @@ using Nezam.Service.Identity.Domain.Tanents;
 using Nezam.Service.Identity.Infrastructure.EntityFrameworkCore;
 using Nezam.Service.Identity.Infrastructure.EntityFrameworkCore.Repositories;
 
-BonyanApplication
+BonyanApplication 
     .CreateBuilder("Identity", "identity", "1.0.0", args)
     .AddFastEndpoints()
     .AddPersistence(c =>
