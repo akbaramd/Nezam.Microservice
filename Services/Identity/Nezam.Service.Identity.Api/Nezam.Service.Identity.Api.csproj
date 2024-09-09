@@ -8,8 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Bonyan.AspNetCore" Version="1.0.2" />
-        <PackageReference Include="Bonyan.AspNetCore.FastEndpoints" Version="1.0.2" />
+        <PackageReference Include="Bonyan.AspNetCore" Version="1.0.4" />
+        <PackageReference Include="Bonyan.AspNetCore.FastEndpoints" Version="1.0.4" />
+        <PackageReference Include="Bonyan.Persistence.EntityFrameworkCore.Sqlite" Version="1.0.4" />
         <PackageReference Include="Cronos" Version="0.8.4"/>
         <PackageReference Include="Dapper" Version="2.1.35"/>
         <PackageReference Include="MassTransit" Version="8.2.5"/>
@@ -44,6 +45,7 @@
     <ItemGroup>
         <Folder Include="logs\" />
     </ItemGroup>
+
 
     <ItemGroup>
       <Content Include="..\..\..\.dockerignore">

@@ -1,4 +1,5 @@
-using Bonyan.DDD.Domain.Enumerations;
+
+using Bonyan.DomainDrivenDesign.Domain.Enumerations;
 
 namespace Nezam.Service.Identity.Domain.Users;
 

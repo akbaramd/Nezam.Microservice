@@ -1,4 +1,4 @@
-using Bonyan.DDD.Domain.Abstractions;
+using Bonyan.DomainDrivenDesign.Domain.Abstractions;
 
 namespace Nezam.Service.Identity.Domain.Departments;
 

@@ -21,7 +21,7 @@ public class UserMigrationJob(
         _timer?.Dispose();
     }
 
-    public async Task ExecuteAsync()
+    public async Task ExecuteAsync(CancellationToken cancellationToken = default)
     {
         logger.LogInformation("Waiting for data seeding to complete...");
         

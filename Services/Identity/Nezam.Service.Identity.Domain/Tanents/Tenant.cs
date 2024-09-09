@@ -1,4 +1,4 @@
-using Bonyan.DDD.Domain.Aggregates;
+using Bonyan.DomainDrivenDesign.Domain.Aggregates;
 using Nezam.Service.Identity.Domain.Departments;
 
 namespace Nezam.Service.Identity.Domain.Tanents;

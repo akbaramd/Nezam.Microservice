@@ -1,4 +1,5 @@
 using Bonyan.DDD.Domain;
+using Bonyan.DomainDrivenDesign.Domain;
 using Nezam.Service.Identity.Domain.Tanents;
 
 namespace Nezam.Service.Identity.Infrastructure.EntityFrameworkCore.Repositories;

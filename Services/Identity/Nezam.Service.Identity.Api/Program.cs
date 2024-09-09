@@ -1,3 +1,4 @@
+using Bonyan.Persistence.EntityFrameworkCore.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Nezam.Service.Identity.Api.Jobs;
 using Nezam.Service.Identity.Api.Seeders;
@@ -13,6 +14,7 @@ BonyanApplication
     {
         c.AddEntityFrameworkCore<IdentityAppDbContext>(efCore =>
         {
+            efCore.UseSqlite("Data Source=NezamServiceIdentity.db");
             efCore.AddRepository<IDepartmentRepository,DepartmentEfRepository>();
             efCore.AddRepository<ITenantRepository,TenantEfRepository>();
         });

@@ -1,9 +1,9 @@
-using Bonyan.EntityFrameworkCore;
+using Bonyan.Persistence.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
 namespace Nezam.Service.Identity.Api.Seeders;
 
-public class RoleSeeder : SeedBase
+public class RoleSeeder : ISeeder
 {
     private readonly ILogger<RoleSeeder> _logger;
     private readonly IServiceProvider _serviceProvider;
@@ -16,7 +16,7 @@ public class RoleSeeder : SeedBase
 
     public int Order { get; set; } = 2; // Set priority order
 
-    public async  override Task SeedAsync()
+    public async   Task SeedAsync(CancellationToken cancellationToken = default)
     {
         using var scope = _serviceProvider.CreateScope();
         var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<Guid>>>();

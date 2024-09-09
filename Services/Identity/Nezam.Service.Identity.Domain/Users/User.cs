@@ -1,4 +1,4 @@
-using Bonyan.DDD.Domain.Aggregates;
+using Bonyan.DomainDrivenDesign.Domain.Aggregates;
 using Microsoft.AspNetCore.Identity;
 using Nezam.Service.Identity.Domain.Departments;
 
